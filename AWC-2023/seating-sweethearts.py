@@ -1,32 +1,28 @@
 import math
 import io
-input = """7
+
+import sys
+input_string = """7
 2 3 1 2
 2 3 3 4
 2 3 4 5
 2 3 2 3
 2 3 3 5
 2 3 1 10
-2 3 10 11"""
+2 3 10 11
+"""
 
 
-io.StringIO(input)
+sys.stdin = io.StringIO(input_string)
 
-data = input.splitlines()
 
-t = int(input[0])
-a = data[1:]
 num_rows = 5
 l_group = [0,1]
 r_group = [2,3,4]
 
 
-for i in range(t):
-    d = a[i].split(' ')
-    c = int(d[0])
-    r = int(d[1])
-    s1 = int(d[2])
-    s2 = int(d[3])
+for i in range(int(input())):
+    c,r,s1,s2 = list(map(int,input().split()))
 
 
 
