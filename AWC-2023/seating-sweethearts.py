@@ -20,8 +20,6 @@ num_rows = 5
 l_group = [0,1]
 r_group = [2,3,4]
 
-print(a)
-
 
 for i in range(t):
     d = a[i].split(' ')
